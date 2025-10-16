@@ -1,0 +1,31 @@
+/** Sets up the grid */
+body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+/** Upper */
+.qiao-se { grid-area: 1 / 1 / 2 / 2;}
+.cv { grid-area: 1 / 7 / 2 / 8; 
+    justify-items: right;}
+
+/** Icons */
+.video { grid-area: 2 / 3 / 3 / 4; 
+        vertical-align: center;}
+.pencil { grid-area: 2 / 4 / 3 / 5; 
+         vertical-align: center;}
+.camera { grid-area: 2 / 5 / 3 / 6; 
+         vertical-align: center;}
+
+/** Lower */
+.press { grid-area: 3 / 1 / 4 / 2; 
+        place-items: bottom;}
+.contact { grid-area: 3 / 7 / 4 / 8; 
+        place-items: bottom;}
