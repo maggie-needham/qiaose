@@ -23,17 +23,21 @@ body {
         padding: 100px;}
 
 /** Icons */
-.video { grid-area: 2 / 3 / 3 / 4; 
+.film { grid-area: 2 / 3 / 3 / 4; 
         vertical-align: center;}
 .pencil { grid-area: 2 / 4 / 3 / 5; 
-        vertical-align: center;}
+        vertical-align: center;
+        place-items: center;}
 .camera { grid-area: 2 / 5 / 3 / 6; 
         vertical-align: center;}
 /** Sizing the PNGs **/
 .icons { 
         width: 100%;
 }
-
+/** Pen Gets Different Sizing **/
+.pen {
+        width: 65%; 
+}
 /** Lower */
 .press { 
         grid-area: 3 / 1 / 4 / 2; 
