@@ -16,11 +16,11 @@ body {
 /** Upper */
 .qiao-se { 
         grid-area: 1 / 1 / 2 / 2;
-        padding: 100px;}
+        padding: 50px;}
 .cv { 
         grid-area: 1 / 7 / 2 / 8; 
         text-align: right;
-        padding: 100px;}
+        padding: 50px;}
 
 /** Icons */
 .film { grid-area: 2 / 3 / 3 / 4; 
@@ -41,11 +41,11 @@ body {
 /** Lower */
 .press { 
         grid-area: 3 / 1 / 4 / 2; 
-        padding: 100px;
+        padding: 50px;
         align-self: end;
         }
 .contact { 
         grid-area: 3 / 7 / 4 / 8; 
-        padding: 100px;
+        padding: 50px;
         align-self: end;
         text-align: right;}
