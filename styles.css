@@ -3,29 +3,45 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 0px;
     grid-row-gap: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 70px;
     width: 100vw;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
+    width: 99.5%;
 }
 
 /** Upper */
-.qiao-se { grid-area: 1 / 1 / 2 / 2;}
-.cv { grid-area: 1 / 7 / 2 / 8; 
-    justify-items: right;}
+.qiao-se { 
+        grid-area: 1 / 1 / 2 / 2;
+        padding: 100px;}
+.cv { 
+        grid-area: 1 / 7 / 2 / 8; 
+        text-align: right;
+        padding: 100px;}
 
 /** Icons */
 .video { grid-area: 2 / 3 / 3 / 4; 
         vertical-align: center;}
 .pencil { grid-area: 2 / 4 / 3 / 5; 
-         vertical-align: center;}
+        vertical-align: center;}
 .camera { grid-area: 2 / 5 / 3 / 6; 
-         vertical-align: center;}
+        vertical-align: center;}
+/** Sizing the PNGs **/
+.icons { 
+        width: 100%;
+}
 
 /** Lower */
-.press { grid-area: 3 / 1 / 4 / 2; 
-        place-items: bottom;}
-.contact { grid-area: 3 / 7 / 4 / 8; 
-        place-items: bottom;}
+.press { 
+        grid-area: 3 / 1 / 4 / 2; 
+        padding: 100px;
+        align-self: end;
+        }
+.contact { 
+        grid-area: 3 / 7 / 4 / 8; 
+        padding: 100px;
+        align-self: end;
+        text-align: right;}
