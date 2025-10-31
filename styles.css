@@ -1,26 +1,38 @@
+@font-face{
+        font-family: tt_travels;
+        src: url(fonts/tt_travels/regular.otf);
+}
+
 /** Sets up the grid */
 body {
     display: grid;
+    cursor: url(png_icons/mouse.png), pointer;
+    font-family: tt_travels;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 10px;
-    font-family: "Times New Roman", Times, serif; 
     font-size: 20px;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    width: 99.5%;
 }
 
 /** Upper */
 .qiao-se { 
         grid-area: 1 / 1 / 2 / 2;
-        padding: 50px;}
+}
+.qiao-se:hover {
+        font-weight: bold;
+}
 .cv { 
         grid-area: 1 / 7 / 2 / 8; 
         text-align: right;
-        padding: 50px;}
+        padding-right: 15px;
+}
+.cv:hover {
+        font-weight: bold;
+}
 
 /** Icons */
 .film { grid-area: 2 / 3 / 3 / 4; 
@@ -41,11 +53,19 @@ body {
 /** Lower */
 .press { 
         grid-area: 3 / 1 / 4 / 2; 
-        padding: 50px;
         align-self: end;
-        }
+        padding-bottom: 15px;
+}
+.press:hover {
+        font-weight: bold;
+}
 .contact { 
         grid-area: 3 / 7 / 4 / 8; 
-        padding: 50px;
         align-self: end;
-        text-align: right;}
+        text-align: right;
+        padding-bottom: 15px;
+        padding-right: 15px;
+}
+.contact:hover {
+        font-weight: bold;
+}
