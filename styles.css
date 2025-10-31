@@ -34,7 +34,20 @@ body {
         font-weight: bold;
 }
 
+@keyframes moveALil {
+        0%   { width: max-content;}
+        90%  { width: 0%;}
+        100% {width: max-content;}
+}
+
+
 /** Icons */
+.icons:hover, .pen:hover{
+        width: max-content;
+        /* animation-name: moveALil;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite; */
+}
 .film { grid-area: 2 / 3 / 3 / 4; 
         vertical-align: center;}
 .pencil { grid-area: 2 / 4 / 3 / 5; 
