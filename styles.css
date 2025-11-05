@@ -1,18 +1,18 @@
 @font-face{
         font-family: tt_travels;
-        src: url(fonts/tt_travels/regular.otf);
+        src: url(fonts/tt_travels/thin.otf);
 }
 
 /** Sets up the grid */
 body {
     display: grid;
-    cursor: url(png_icons/mouse.png), pointer;
+    cursor: pointer;
     font-family: tt_travels;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 10px;
-    font-size: 20px;
+    font-size: 25px;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -31,7 +31,7 @@ body {
         padding-right: 15px;
 }
 .cv:hover {
-        font-weight: bold;
+        font-weight: bold;              
 }
 
 @keyframes moveALil {
@@ -42,12 +42,12 @@ body {
 
 
 /** Icons */
-.icons:hover, .pen:hover{
+/* .icons:hover, .pen:hover{
         /* width: max-content; */
-        animation-name: moveALil;
+        /* animation-name: moveALil;
         animation-duration: 0.5s;
-        animation-iteration-count: infinite;
-}
+        animation-iteration-count: infinite
+} */
 .film { grid-area: 2 / 3 / 3 / 4; 
         vertical-align: center;}
 .pencil { grid-area: 2 / 4 / 3 / 5; 
@@ -61,7 +61,8 @@ body {
 }
 /** Pen Gets Different Sizing **/
 .pen {
-        width: 65%; 
+        width: 90%; 
+        margin-top: 10%;
 }
 /** Lower */
 .press { 
