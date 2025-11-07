@@ -1,14 +1,83 @@
-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: start;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+@font-face{
+        font-family: tt_travels;
+        src: url(../fonts/tt_travels/thin.otf);
 }
 
-img {
-    width: 10%;
+@font-face{
+        font-family: tt_travels_regular;
+        src: url(../fonts/tt_travels/regular.otf);
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: tt_travels; 
+    cursor: pointer;
+}
+
+
+.left-bar { 
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: left; 
+    margin-left: 10px; 
+}
+
+.qiaose {
+    /* Cannot figure out why this is the same size as the 25px font in the index page!! */
+    font-size: 40px;
+}
+
+.qiaose:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+.qiaose:hover {
+    /** Cannot figure out why this isn't working **/
+    font-style: bold;
+}
+
+.returnhome{
+    font-size: 40px;
+    font-family: tt_travels;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.returnhome:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.title:hover {
+    color: blue;
+}
+
+p{
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+p:hover {
+    color: blue;
+}
+
+.right-bar { grid-area: 1 / 8 / 2 / 9; }
+
+
+.center { 
+    grid-area: 1 / 2 / 2 / 8; 
+    display: flex;
 }

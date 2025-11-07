@@ -1,8 +1,16 @@
-@font-face{
+@font-face {
         font-family: tt_travels;
         src: url(fonts/tt_travels/thin.otf);
 }
 
+@font-face {
+        font-family: tt_travels_regular;
+        src: url(fonts/tt_travels/regular.otf);
+}
+@font-face {
+        font-family: antone;
+        src: url(fonts/antone/Antone\ DEMO.ttf);
+}
 /** Sets up the grid */
 body {
     display: grid;
@@ -24,6 +32,7 @@ body {
 }
 .qiao-se:hover {
         font-weight: bold;
+        color: blue;
 }
 .cv { 
         grid-area: 1 / 7 / 2 / 8; 
@@ -31,7 +40,8 @@ body {
         padding-right: 15px;
 }
 .cv:hover {
-        font-weight: bold;              
+        font-weight: bold;
+        color: blue;              
 }
 
 @keyframes moveALil {
@@ -49,12 +59,24 @@ body {
         animation-iteration-count: infinite
 } */
 .film { grid-area: 2 / 3 / 3 / 4; 
-        vertical-align: center;}
+        vertical-align: center;
+        text-align: center;}
+.film:hover .label{
+        visibility: visible;
+}
 .pencil { grid-area: 2 / 4 / 3 / 5; 
         vertical-align: center;
-        place-items: center;}
+        place-items: center;
+        text-align: center;}
+.pencil:hover .label{
+        visibility: visible;
+}       
 .camera { grid-area: 2 / 5 / 3 / 6; 
-        vertical-align: center;}
+        vertical-align: center;
+        text-align: center;}
+.camera:hover .label {
+        visibility: visible;
+}
 /** Sizing the PNGs **/
 .icons { 
         width: 100%;
@@ -64,6 +86,13 @@ body {
         width: 90%; 
         margin-top: 10%;
 }
+/** Labels for the icons (only appear on hover) **/ 
+.label {
+        font-family: tt_travels;
+        font-size: 15px;
+        color: blue;
+        visibility: hidden;
+}
 /** Lower */
 .press { 
         grid-area: 3 / 1 / 4 / 2; 
@@ -72,6 +101,7 @@ body {
 }
 .press:hover {
         font-weight: bold;
+        color: blue;
 }
 .contact { 
         grid-area: 3 / 7 / 4 / 8; 
@@ -82,4 +112,5 @@ body {
 }
 .contact:hover {
         font-weight: bold;
+        color: blue;
 }
