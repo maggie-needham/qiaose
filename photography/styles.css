@@ -20,7 +20,7 @@ body {
     cursor: pointer;
 }
 
-
+/* LEFT BAR */
 .left-bar { 
     grid-area: 1 / 1 / 2 / 2; 
     text-align: left; 
@@ -31,37 +31,31 @@ body {
     /* Cannot figure out why this is the same size as the 25px font in the index page!! */
     font-size: 40px;
 }
-
 .qiaose:hover {
     font-weight: bold;
     color: blue;
 }
 
-.qiaose:hover {
-    /** Cannot figure out why this isn't working **/
-    font-style: bold;
-}
-
-.returnhome{
+.press{
     font-size: 40px;
     font-family: tt_travels;
     margin-left: 15px;
     margin-bottom: 15px;
 }
-
-.returnhome:hover {
+.press:hover {
     font-weight: bold;
     color: blue;
 }
 
+/* Film, Writing, Photography Titles*/
 .title {
     font-size: 30px;
 }
-
 .title:hover {
     color: blue;
 }
 
+/* Sub-categories */
 p{
     font-size: 20px;
     font-style: italic;
@@ -69,15 +63,47 @@ p{
     margin-top: 1px;
     margin-bottom: 1px;
 }
-
 p:hover {
     color: blue;
 }
 
-.right-bar { grid-area: 1 / 8 / 2 / 9; }
-
-
+/* CENTER SECTION */
 .center { 
     grid-area: 1 / 2 / 2 / 8; 
+}
+.container {
+    width: 80vw;
     display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+img {
+    width: 100px;
+    flex-grow: 1;
+}
+
+/*  RIGHT BAR */
+.right-bar { grid-area: 1 / 8 / 2 / 9; }
+.cv { 
+    font-size: 40px;
+    text-align: right;
+    padding-right: 15px;
+}
+.cv:hover {
+    font-weight: bold;
+    color: blue;              
+}
+/* I CAN'T FIGURE OUT WHY THIS ISN'T AT THE BOTTOM AND WHY PRESS IS ??  */
+.contact { 
+    font-size: 40px;
+    text-align: right;
+    align-self: end;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+.contact:hover {
+    font-weight: bold;
+    color: blue;
 }
