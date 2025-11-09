@@ -14,11 +14,11 @@ for (i = 0; i < coll.length; i++) {
     if (this.classList.contains("active")) {
         content.style.opacity = "1";
         content.style.visibility = "visible";
-        arrow.style.rotate = "90deg";
+        arrow.style.transform = "rotate(0deg)";
     } else {
       content.style.opacity = "0";
       content.style.visibility = "collapse";
-      arrow.style.rotate = "0deg";
+      arrow.style.transform = "rotate(270deg)";
     }
   });
 }

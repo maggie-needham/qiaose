@@ -74,7 +74,7 @@ p:hover {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 35px;
+  font-size: 30px;
   font-family: tt_travels;
   background-color: white;
   margin-left: 40px;
@@ -99,10 +99,11 @@ p:hover {
     justify-content: space-evenly;
     transition: opacity 0.9s ease-out;
 }
+/* Work on getting arrow to actually rotate */
 .arrow {
-    width: 20px;
+    width: 12px;
     rotate: 90deg;
-    transition: transform 0.9s ease-out;  
+    align-self: center;
 }
 img {
     width: 20%;
