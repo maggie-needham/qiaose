@@ -14,7 +14,6 @@ body {
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     width: 100vw;
-    height: 100vh;
     overflow: hidden;
     font-family: tt_travels; 
     cursor: pointer;
@@ -68,20 +67,45 @@ p:hover {
 }
 
 /* CENTER SECTION */
+/* Argentina title */
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 35px;
+  font-family: tt_travels;
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.active, .collapsible:hover {
+   font-weight: bold;
+}
+
 .center { 
     grid-area: 1 / 2 / 2 / 8; 
 }
 .container {
-    width: 80vw;
+    width: 100%;
+    height: 35%;
     display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
+    opacity: 1;
+    visibility: visible;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    transition: opacity 0.9s ease-out;
+}
+.arrow {
+    width: 20px;
+    rotate: 90deg;
+    transition: transform 0.9s ease-out;  
 }
 img {
-    width: 100px;
-    flex-grow: 1;
+    width: 20%;
 }
 
 /*  RIGHT BAR */
