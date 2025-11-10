@@ -5,12 +5,12 @@ var arrows = document.getElementsByClassName("arrow");
 var i;
 // set the first as active
 // (work on making this an animation)
-coll[0].classList.toggle("active");
+// coll[0].classList.toggle("active");
 //set the first as display flex
-coll[0].nextElementSibling.style.display = "flex";
+// coll[0].nextElementSibling.style.display = "flex";
 // console.log(coll[0].nextElementSibling)
 // set argentina arrow as down 
-arrows[0].style.transform = "rotate(90deg)";
+// arrows[0].style.transform = "rotate(90deg)";
 
 window.onload = function () {
     setup();
@@ -50,11 +50,12 @@ function restore () {
     setup();
 }
 
-
+// connecting menu and photographs
 function clicker (id) {
-    console.log("in here");
-    console.log("id = " + id);
     var button = document.getElementById(id);
-    console.log(button);
     button.click();
+    
+    // get the text 
+    var p_id = "p-" + id;
+    document.getElementById(p_id).classList.toggle("clicked");
 }
