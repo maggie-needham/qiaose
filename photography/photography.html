@@ -38,12 +38,12 @@
         <br><br>
         <!-- Photography Menu -->
         <div class = "title">Photography</div>
-            <p>Argentina</p>
-            <p>Colombia</p>
-            <p>Havana, Cuba</p>
-            <p>Malaysia</p>
-            <p>Trinidad & Tobago</p>
-            <p>USA</p>
+            <p onclick = "clicker('arg')">Argentina</p>
+            <p onclick = "clicker('col')">Colombia </p>
+            <p onclick = "clicker('cub')">Havana, Cuba</p>
+            <p onclick = "clicker('mal')">Malaysia</p>
+            <p onclick = "clicker('tri')">Trinidad & Tobago</p>
+            <p onclick = "clicker('usa')">USA</p>
         </div>
         <!-- Press -->
         <div class = "press" onclick = "window.location.href = '../press/press.html'">Press</div>
@@ -53,7 +53,7 @@
     <div class = "center"> 
         <!-- Home Button (??)-->
         <!-- Argentina -->
-        <button type = "button" class = "collapsible">
+        <button id = "arg" type = "button" class = "collapsible">
             <img class = "arrow" src = "../png_icons/right_arrow.png"></img>
             Argentina
         </button>
@@ -70,7 +70,7 @@
             <img src = "photos/Argentina/IMG_2383.jpg" onclick = "closerLook('photos/Argentina/IMG_2383.jpg')"></img>
         </div>
         <!-- Colombia -->
-        <button type = "button" class = "collapsible">
+        <button id = "col" type = "button" class = "collapsible">
             <img class = "arrow" src = "../png_icons/right_arrow.png"></img>
             Colombia
         </button>
@@ -85,7 +85,7 @@
             <img src = "photos/Colombia/0199.jpg" onclick = "closerLook('photos/Colombia/0199.jpg')"></img>
         </div>
         <!-- Havana, Cuba-->
-        <button type = "button" class = "collapsible">
+        <button id = "cub" type = "button" class = "collapsible">
             <img class = "arrow" src = "../png_icons/right_arrow.png"></img>
             Havana, Cuba
         </button>
@@ -101,7 +101,7 @@
 
         </div>
         <!-- Malaysia -->
-        <button type = "button" class = "collapsible">
+        <button id = "mal" type = "button" class = "collapsible">
             <img class = "arrow" src = "../png_icons/right_arrow.png"></img>
             Malaysia
         </button>
@@ -115,7 +115,7 @@
             <img src = "photos/Malaysia/mirror.jpg" onclick = "closerLook('photos/Malaysia/mirror.jpg')"></img>
         </div>
         <!-- Trinidad & Tobago -->
-         <button type = "button" class = "collapsible">
+         <button id = "tri" type = "button" class = "collapsible">
             <img class = "arrow" src = "../png_icons/right_arrow.png"></img>
             Trinidad & Tobago
         </button>
@@ -125,7 +125,7 @@
             <img src = "photos/TT/70910008.jpg" onclick = "closerLook('photos/TT/70910008.jpg')"></img>
         </div>
         <!-- USA -->
-          <button type = "button" class = "collapsible">
+        <button id = "usa" type = "button" class = "collapsible">
             <img class = "arrow" src = "../png_icons/right_arrow.png"></img>
             USA
         </button>

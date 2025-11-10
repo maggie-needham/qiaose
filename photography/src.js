@@ -33,6 +33,7 @@ function setup() {
 }
 }
 
+// get the center column 
 var center = document.getElementsByClassName("center")[0];
 // create a list of previous cotent 
 var recent_state;
@@ -43,7 +44,17 @@ function closerLook (source) {
     center.innerHTML = "<img src = '" + source + "' class = 'individual_img'></img> <br> <p onclick = 'restore()'>go back</p>"
 }
 
+// restore to previous state 
 function restore () {
     center.innerHTML = recent_state;
     setup();
+}
+
+
+function clicker (id) {
+    console.log("in here");
+    console.log("id = " + id);
+    var button = document.getElementById(id);
+    console.log(button);
+    button.click();
 }
