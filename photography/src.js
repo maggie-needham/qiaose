@@ -19,6 +19,11 @@ for (i = 0; i < coll.length; i++) {
         var arrow = this.children[0];
         var content = this.nextElementSibling;
         if (this.classList.contains("active")) {
+            // determine height of content 
+            // var numPhotos = content.children.length;
+            // var 
+            // content.style.height = 
+            // content.style.color = "blue";
             content.style.display = "flex";
             arrow.style.transform = "rotate(90deg)";
         } else {
