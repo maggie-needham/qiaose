@@ -41,7 +41,7 @@ var recent_state;
 function closerLook (source) {
     // save content in variable 
     recent_state = center.innerHTML;
-    center.innerHTML = "<img src = '" + source + "' class = 'individual_img'></img> <br> <p onclick = 'restore()'>go back</p>"
+    center.innerHTML = "<img src = '" + source + "' class = 'individual_img'></img> <br> <div class = 'goback' onclick = 'restore()'>go back</div>"
 }
 
 // restore to previous state 
