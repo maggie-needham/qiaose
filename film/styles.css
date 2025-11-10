@@ -65,54 +65,14 @@ p:hover {
 }
 
 /* CENTER SECTION */
-/* Argentina title */
-.collapsible {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 22px;
-  font-family: tt_travels;
-  background-color: white;
-  /* margin-left: 40px; */
-  margin-top: 15px;
-}
-.active, .collapsible:hover {
-   /* font-weight: bold; */
-}
-/* Work on getting arrow to actually rotate */
-.arrow {
-    width: 12px;
-    align-self: center;
-}
-
 .center { 
     grid-area: 1 / 2 / 2 / 8; 
     display: grid;
-    color: blue;
     text-align: center;
     font-size: 24px;
 }
-.container {
-    flex: 0 0 auto; 
-    width: 100%;
-    height: 500px;
-    display: none;
-    visibility: visible;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
-    gap: 5px;
-}
 img {
-    width: 200px;
-    align-self: flex-start;
-}
-.individual_img{
-    height: 90vh;
-    width: auto;
+    width: 50vw;
     margin-left: auto;
     margin-right: auto;
 }
