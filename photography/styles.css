@@ -90,6 +90,9 @@ p:hover {
 .center { 
     grid-area: 1 / 2 / 2 / 8; 
     display: grid;
+    color: blue;
+    text-align: center;
+    font-size: 24px;
 }
 .container {
     flex: 0 0 auto; 
@@ -106,6 +109,12 @@ p:hover {
 img {
     width: 200px;
     align-self: flex-start;
+}
+.individual_img{
+    height: 90vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*  RIGHT BAR */

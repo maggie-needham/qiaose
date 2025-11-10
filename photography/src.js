@@ -12,18 +12,17 @@ coll[0].nextElementSibling.style.display = "flex";
 // set argentina arrow as down 
 arrows[0].style.transform = "rotate(90deg)";
 
+window.onload = function () {
+    setup();
+};
 
-for (i = 0; i < coll.length; i++) {
+function setup() {
+    for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var arrow = this.children[0];
         var content = this.nextElementSibling;
         if (this.classList.contains("active")) {
-            // determine height of content 
-            // var numPhotos = content.children.length;
-            // var 
-            // content.style.height = 
-            // content.style.color = "blue";
             content.style.display = "flex";
             arrow.style.transform = "rotate(90deg)";
         } else {
@@ -32,5 +31,19 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+}
 
+var center = document.getElementsByClassName("center")[0];
+// create a list of previous cotent 
+var recent_state;
+// when a user clicks on a photo, the photo replaces other content
+function closerLook (source) {
+    // save content in variable 
+    recent_state = center.innerHTML;
+    center.innerHTML = "<img src = '" + source + "' class = 'individual_img'></img> <br> <p onclick = 'restore()'>go back</p>"
+}
 
+function restore () {
+    center.innerHTML = recent_state;
+    setup();
+}
