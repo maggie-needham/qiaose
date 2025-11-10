@@ -96,7 +96,7 @@ p:hover {
 }
 .container {
     width: 100%;
-    height: 25%;
+    height: 40%;
     display: none;
     opacity: 1;
     visibility: visible;
@@ -110,8 +110,7 @@ img {
 }
 
 /*  RIGHT BAR */
-.right-bar { grid-area: 1 / 8 / 2 / 9; 
-background-color: blue;}
+.right-bar { grid-area: 1 / 8 / 2 / 9;}
 .cv { 
     font-size: 40px;
     text-align: right;
